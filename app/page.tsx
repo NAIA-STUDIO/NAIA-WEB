@@ -145,16 +145,19 @@ export default function Home() {
         {/* Projects Section */}
         <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
           <div className="container px-4 md:px-6">
+            {/* Encabezado de la sección */}
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">Proyectos Destacados</h2>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
+                  Proyectos Destacados
+                </h2>
                 <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
                   Descubre nuestras soluciones más innovadoras en el campo de la Inteligencia Artificial
                 </p>
               </div>
             </div>
 
-            {/* Main Project - AI Agents */}
+            {/* Proyecto Principal */}
             <div className="mt-12 rounded-xl border bg-white p-6 shadow-lg">
               <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
                 <Image
@@ -162,7 +165,7 @@ export default function Home() {
                   width={600}
                   height={400}
                   alt="AI Agents Visualization"
-                  className="mx-auto aspect-[16/11] overflow-hidden rounded-xl object-cover object-center"             
+                  className="mx-auto aspect-[16/11] overflow-hidden rounded-xl object-cover object-center"
                 />
                 <div className="flex flex-col justify-center space-y-4">
                   <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800">
@@ -193,74 +196,84 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Other Projects */}
-            <div className="mt-12 grid gap-6 md:grid-cols-2">
+            {/* Proyectos Secundarios */}
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
               {/* Project 1 */}
-              <div className="rounded-xl border bg-white p-6 shadow-md">
+              <div className="rounded-xl border bg-white p-6 shadow-md flex flex-col">
                 <Image
                   src="/AI_Image&Video.png?height=300&width=500"
                   width={500}
                   height={300}
-                  alt="AI Image Generation"
-                  className="aspect-[16/11] w-full overflow-hidden rounded-lg object-cover object-center"
+                  alt="Imágenes y Vídeos con IA"
+                  className="aspect-[16/16] w-full overflow-hidden rounded-lg object-cover object-center"
                 />
-                <div className="mt-4 space-y-2">
-                  <h3 className="text-xl font-bold">Generación de Imágenes y Vídeos con IA</h3>
-                  <p className="text-muted-foreground">
-                    Utilizamos tecnología de vanguardia para crear imágenes y vídeos realistas con IA. Permitiendonos
-                    generar contenido visual de alta calidad para marketing, entretenimiento y diseño.
-                  </p>
-                  <Button variant="outline" className="w-fit">
-                    Ver ejemplos
-                  </Button>
+                <div className="mt-4 flex flex-col flex-1 justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold">Imágenes y Vídeos con IA</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Utilizamos tecnología de vanguardia para crear imágenes y vídeos realistas con IA, generando contenido visual de alta calidad para marketing, entretenimiento y diseño.
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <Button variant="outline" className="w-fit">
+                      Ver ejemplos
+                    </Button>
+                  </div>
                 </div>
               </div>
 
               {/* Project 2 */}
-              <div className="rounded-xl border bg-white p-6 shadow-md">
+              <div className="rounded-xl border bg-white p-6 shadow-md flex flex-col">
+                <Image
+                  src="/AI_FUTBOL.png?height=300&width=500"
+                  width={500}
+                  height={300}
+                  alt="Visión Artificial en Fútbol"
+                  className="aspect-[16/16] w-full overflow-hidden rounded-lg object-cover object-center"
+                />
+                <div className="mt-4 flex flex-col flex-1 justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold">Visión Artificial en Fútbol</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Usamos herramientas de visión artificial para realizar el trackeo de los jugadores de fútbol, obtener estadísticas, mostrar los mejores momentos y mucho más.
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <Button variant="outline" className="w-fit">
+                      Ver ejemplos
+                    </Button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project 3 */}
+              <div className="rounded-xl border bg-white p-6 shadow-md flex flex-col">
                 <Image
                   src="/AI_DeepFake.png?height=300&width=500"
                   width={500}
                   height={300}
                   alt="DeepFake Technology"
-                  className="aspect-[16/11] w-full overflow-hidden rounded-lg object-cover object-center"
-                />
-                <div className="mt-4 space-y-2">
-                  <h3 className="text-xl font-bold">DeepFakes Avanzados</h3>
-                  <p className="text-muted-foreground">
-                    Desarrollamos tecnología DeepFake con recursos de alta tecnología para aplicaciones éticas en entretenimiento,
-                    doblaje automático y creación de contenido personalizado.
-                  </p>
-                  <Button variant="outline" className="w-fit">
-                    Ver ejemplos
-                  </Button>
-                </div>
-              </div>
-
-                {/* Project 3 */}
-              <div className="rounded-xl border bg-white p-6 shadow-md">
-                <Image
-                  src="/AI_FUTBOL.png?height=300&width=500"
-                  width={500}
-                  height={300}
-                  alt="Chatbot Conversacional"
                   className="aspect-[16/16] w-full overflow-hidden rounded-lg object-cover object-center"
                 />
-                <div className="mt-4 space-y-2">
-                  <h3 className="text-xl font-bold">Chatbots Conversacionales</h3>
-                  <p className="text-muted-foreground">
-                    Creamos chatbots inteligentes que ofrecen atención personalizada, respondiendo de forma natural y eficaz a
-                    las consultas de tus clientes.
-                  </p>
-                  <Button variant="outline" className="w-fit">
-                    Ver ejemplos
-                  </Button>
+                <div className="mt-4 flex flex-col flex-1 justify-between">
+                  <div>
+                    <h3 className="text-xl font-bold">DeepFakes Avanzados</h3>
+                    <p className="text-muted-foreground mt-2">
+                      Desarrollamos tecnología DeepFake con recursos de alta tecnología para aplicaciones éticas en entretenimiento, doblaje automático y creación de contenido personalizado.
+                    </p>
+                  </div>
+                  <div className="mt-4">
+                    <Button variant="outline" className="w-fit">
+                      Ver ejemplos
+                    </Button>
+                  </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>
+
+
 
         {/* Methodology Section */}
         <section id="methodology" className="w-full py-12 md:py-24 lg:py-32 bg-white">
