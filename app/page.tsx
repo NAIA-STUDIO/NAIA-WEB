@@ -162,7 +162,7 @@ export default function Home() {
                   width={600}
                   height={400}
                   alt="AI Agents Visualization"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center"             
+                  className="mx-auto aspect-[16/11] overflow-hidden rounded-xl object-cover object-center"             
                 />
                 <div className="flex flex-col justify-center space-y-4">
                   <div className="inline-block rounded-lg bg-blue-100 px-3 py-1 text-sm text-blue-800">
@@ -202,12 +202,12 @@ export default function Home() {
                   width={500}
                   height={300}
                   alt="AI Image Generation"
-                  className="aspect-video w-full overflow-hidden rounded-lg object-cover object-center"
+                  className="aspect-[16/11] w-full overflow-hidden rounded-lg object-cover object-center"
                 />
                 <div className="mt-4 space-y-2">
                   <h3 className="text-xl font-bold">Generación de Imágenes y Vídeos con IA</h3>
                   <p className="text-muted-foreground">
-                    Utilizamos ComfyUI + Flux para crear imágenes y vídeos realistas con IA. Esta tecnología permite
+                    Utilizamos tecnología de vanguardia para crear imágenes y vídeos realistas con IA. Permitiendonos
                     generar contenido visual de alta calidad para marketing, entretenimiento y diseño.
                   </p>
                   <Button variant="outline" className="w-fit">
@@ -223,12 +223,12 @@ export default function Home() {
                   width={500}
                   height={300}
                   alt="DeepFake Technology"
-                  className="aspect-video w-full overflow-hidden rounded-lg object-cover object-center"
+                  className="aspect-[16/11] w-full overflow-hidden rounded-lg object-cover object-center"
                 />
                 <div className="mt-4 space-y-2">
                   <h3 className="text-xl font-bold">DeepFakes Avanzados</h3>
                   <p className="text-muted-foreground">
-                    Desarrollamos tecnología DeepFake con DeepFaceLab para aplicaciones éticas en entretenimiento,
+                    Desarrollamos tecnología DeepFake con recursos de alta tecnología para aplicaciones éticas en entretenimiento,
                     doblaje automático y creación de contenido personalizado.
                   </p>
                   <Button variant="outline" className="w-fit">
@@ -236,6 +236,28 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
+
+                {/* Project 3 */}
+              <div className="rounded-xl border bg-white p-6 shadow-md">
+                <Image
+                  src="/AI_FUTBOL.png?height=300&width=500"
+                  width={500}
+                  height={300}
+                  alt="Chatbot Conversacional"
+                  className="aspect-[16/16] w-full overflow-hidden rounded-lg object-cover object-center"
+                />
+                <div className="mt-4 space-y-2">
+                  <h3 className="text-xl font-bold">Chatbots Conversacionales</h3>
+                  <p className="text-muted-foreground">
+                    Creamos chatbots inteligentes que ofrecen atención personalizada, respondiendo de forma natural y eficaz a
+                    las consultas de tus clientes.
+                  </p>
+                  <Button variant="outline" className="w-fit">
+                    Ver ejemplos
+                  </Button>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
